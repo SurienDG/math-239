@@ -33,7 +33,7 @@ Let $B$ be the set of all binary strings;
 A **decomposition rule** is a rule to decompose a string into "parts" **uniquely**.
 Here the rule is: decompose where each part is a single digit
 
-Ex: $[0][1][0][1]$
+Ex: \[\left[ 0 \right]\left[ 1 \right]\left[ 0 \right]\left[ 1 \right]\]
 
 each part is in ${0,1}$, each string is formed from any # of these parts.
 So we get ${0,1}*$ as the expression
