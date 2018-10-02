@@ -6,7 +6,7 @@
 $AB = \{ab: a \in A, bE \in B\}$ set! (not multiset) unambiguous if $\nexists {{a}_{1}},{{a}_{2}}\in A,{{b}_{1}},{{b}_{2}}\in B\text{  }{{a}_{1}}{{b}_{1}}={{a}_{2}}{{b}_{2}}$
 
 ### Star:
-$A* = {E}\cup(A^1)\cup(A^2)u...$
+$A* = {E}\cup(A^1)\cup(A^2)\cup(A^3)\cup...$
 
 ### Unambiguous 
 - $A^k$ unambiguous $\forall k \leq 0$
@@ -42,22 +42,23 @@ So we get ${0,1}*$ as the expression
 however decomposing where each part is length $1$ or $2$ is not unique (and hence is ambiguous)
 
 ### Useful unambiguous for expressions for $B$:
-Decomposition Rule | Expression
-After each 0 | {{1}*{0}}*, {1}*
-AFter each 1 | ( {0}*{1} )* {0}*
-After each block of 0s | {0}* ({1}{1}*{0}{0}*)*{1}*
-1s | {1}* ({0}{0}*{1}{1}*)*{1}*
+|Decomposition Rule | Expression|
+|-------------------|-----------|
+|After each 0 | $(\{1\}*\{0\})*, \{1\}*|
+|After each 1 | $(\{0\}*\{1\} )* \{0\}*$|
+|After each block of $0$s | $\{0\}* (\{1\}\{1\}*\{0\}\{0\}*)*\{1\}*$|
+| $1$s | $\{1\}* (\{0\}\{0\}*\{1\}\{1\}*)*\{1\}*$|
 
 **Why?**
 
-Main parts of Decomp (used any # of times) | Final part
-{0, 10, 110, 1110,...} = {1}*{0} | {E, 1, 11, 111,...} = {1}*
-{0}*{1} | {0}*
+|Main parts of Decomp (used any # of times) | Final part|
+|--|--|
+|${0, 10, 110, 1110,...} = \{1\}*\{0\} | \{\in, 1, 11, 111,...\} = \{1\}*
+\{0\}*\{1\} | \{0\}*$|
 
-Beginning part | Main part | Final part
-(possibly empty) block of 0s: {0}* | 
-non empty block of 1s followed by a non empty block of 0s: {1, 11, 111,...}{0,00,000,...} | 
-(possibly empty) block of 1s: {1}*
+|Beginning part | Main part | Final part |
+|-----|----|---|
+|(possibly empty) block of $0$s: $\{0\}*$ | non empty block of $1$s followed by a non empty block of $0$s: $\{1, 11, 111,...\}\{0,00,000,...\}$|(possibly empty) block of $1$s: $\{1\}$* |
 
 
 ### Finding Gen series from Block Decompositions:
@@ -77,10 +78,12 @@ $B = \{1\}*(\{0\}\{0\}*\{1\}\{1\}*)*\{0\}*$
 
 We modify the exp. by modifying the acceptable parts
 
-(Blank)| Before(all) | After (number of blocks of ex. 4 1's)
-Beg part | {1}* | {E, 1, 11, 111, 11111,...} (no 4 1's)
-Main part | {0}{0}*{1}{1}* | {0,00,...}{1, 11, 111, 11111,...}
-Final part | {0}* | {0}*
+
+|            | Before(all)    | After (number of blocks of ex. 4 1's)      |
+|------------|----------------|--------------------------------------------|    
+| Beg part   | $\{1\}*$           | $\{\in, 1, 11, 111, 11111,...\}$ (no 4 1's)|
+| Main part  | $\{0\}\{0\}*\{1\}\{1\}*$ | $\{0,00,...\}\{1, 11, 111, 11111,...\}$    |
+| Final part | $\{0\}*$           |  $\{0\}*$                                      |
 
 $\{E, 1, 11, 111, 11111, ...\}(\{0\}\{0\}*\{1\}\{E, 1, 11, 1111,...\})*\{0\}* =
 (\{E,1,11,111\}\cup\{11111\}\{1\}*)(\{0\}\{0\}*\{1\}(\{E, 1, 11\}\cup\{1111\}\{1\}*)*\{0\}*$
