@@ -44,7 +44,7 @@ however decomposing where each part is length $1$ or $2$ is not unique (and henc
 ### Useful unambiguous for expressions for $B$:
 |Decomposition Rule | Expression|
 |-------------------|-----------|
-|After each 0 | $(\{1\}*\{0\})*, \{1\}*|
+|After each 0 | $(\{1\}*\{0\})*, \{1\}*$|
 |After each 1 | $(\{0\}*\{1\} )* \{0\}*$|
 |After each block of $0$s | $\{0\}* (\{1\}\{1\}*\{0\}\{0\}*)*\{1\}*$|
 | $1$s | $\{1\}* (\{0\}\{0\}*\{1\}\{1\}*)*\{1\}*$|
