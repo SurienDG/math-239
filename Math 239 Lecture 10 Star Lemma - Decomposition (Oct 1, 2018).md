@@ -25,7 +25,7 @@ If $A*$ is unambiguous, then $\Phi_{A*}(x) = \frac{1}{1 - \Phi_A(x)}$
 ## Expressions for the set of all binary strings: 
 Let $B$ be the set of all binary strings;
 
-**#1:** $B = {0,1}*$ is **unambiguous**, why?
+**#1:** $B = \\{0,1\\}*$ is **unambiguous**, why?
 
 - every string is uniquely reconstructable
 - alternatively, the exp. comes from a "decomposition rule"
