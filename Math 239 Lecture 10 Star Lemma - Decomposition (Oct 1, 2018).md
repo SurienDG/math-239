@@ -93,7 +93,7 @@ $(1 + x  + x^2 + x^3 + \frac{x^5}{1-x})(\frac{1}{1 - x \cdot \frac{1}{1 - x}\cdo
 
 ### Reminder main part is starred 
 
-so it will show as \frac{1}{1-\Phi_{\text{Main}}} in the middle
+so it will show as $\frac{1}{1-\Phi_{\text{Main}}}$  in the middle
 You final expression is,
 			$\Phi_{\text{Beg}}(\frac{1}{1- \Phi_{\text{Main}}})\Phi_{\text{end}}$
 - it may be useful to calculate $\Phi_{\text{Beg}}$, $\Phi_{\text{Main}}$, and $\Phi_{\text{end}}$ first
