@@ -53,8 +53,8 @@ however decomposing where each part is length $1$ or $2$ is not unique (and henc
 
 |Main parts of Decomp (used any # of times) | Final part|
 |--|--|
-|${0, 10, 110, 1110,...} = \{1\}*\{0\} | \{\in, 1, 11, 111,...\} = \{1\}*
-\{0\}*\{1\} | \{0\}*$|
+|${0, 10, 110, 1110,...} = \{1\}*\{0\}$ | $\{\in, 1, 11, 111,...\} = \{1\}*
+\{0\}*\{1\}$ | $\{0\}*$|
 
 |Beginning part | Main part | Final part |
 |-----|----|---|
